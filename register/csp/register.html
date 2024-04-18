@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSP | Login</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        body {
+            /*background-image: url('img/fundo2.jpg');*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login {
+            position: absolute;
+            z-index: 1;
+            background: rgba(255, 253, 253, 0.85);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+            /*opacity:0.5;*/
+            border-radius: 30px;
+        }
+    </style>
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen   animated fadeInDown">
+        <div class="">
+            <div>
+
+                <!--<h1 class="logo-name">CSP</h1>-->
+                <div class="mt-5 mb-5">
+                    <img alt="image" class="" src="img/logo_csp.webp" style="width:100%;">
+                </div>
+
+            </div>
+            <h3>Cadastro em Compre sua Pe&ccedil;a</h3>
+            <p>Crie a sua conta para entrar em a&ccedil;&atilde;o</p>
+            <form class="m-t" role="form" action="login.html">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Digite seu Nome" required="">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Digite seu Email" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Digite uma Senha" required="">
+                </div>
+                <div class="form-group">
+                    <div class="checkbox ichecks">
+                        <label> 
+                            <input type="checkbox"><i></i> Concordo com o termo de acesso
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-csp block full-width m-b">Cadastrar-se</button>
+
+                <p class="text-muted text-center"><small>Já possui uma conta?</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="index.html">Login</a>
+            </form>
+            <p class="m-t"> <small> &copy; 2022 - Compre sua Pe&ccedil;a</small> </p>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</body>
+
+</html>
